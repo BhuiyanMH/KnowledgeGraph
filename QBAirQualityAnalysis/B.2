@@ -1,0 +1,18 @@
+PREFIX schema: <http://qweb.cs.aau.dk/airbase/schema/>
+PREFIX property: <http://qweb.cs.aau.dk/airbase/property/> 
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+SELECT ?station ?country_nm ?yr (avg(?c6h6) as ?avg_benzo) 
+WHERE {
+     ?obs schema:C6H6 ?c6h6 .
+     ?obs schema:station ?station .
+     ?station property:station ?station_nm.
+     ?obs schema:year ?year .
+     ?year property:yearNum ?yr .
+	 ?station schema:inCity ?city .
+     ?city schema:locatedIn ?country . 
+     ?country property:country ?country_nm .
+	 ?obs  schema:sensor ?sensor .
+     ?sensor property:statisticShortName "Mean"^^xsd:string . 
+}
+GROUP BY ?station ?country_nm ?yr
+ORDER BY DESC(?avg_benzo)
