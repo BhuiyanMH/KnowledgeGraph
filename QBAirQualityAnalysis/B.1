@@ -1,0 +1,13 @@
+PREFIX schema: <http://qweb.cs.aau.dk/airbase/schema/>
+PREFIX property: <http://qweb.cs.aau.dk/airbase/property/> 
+SELECT DISTINCT ?station_nm ?type ?long ?lat ?country_nm
+WHERE {
+     ?station property:longitudeDegree ?long .
+     ?station property:latitudeDegree ?lat .
+    ?station property:type ?type.
+    ?station property:station ?station_nm.
+	  ?station schema:inCity ?city .
+    ?city schema:locatedIn ?country . 
+    ?country property:country ?country_nm .
+}
+GROUP BY ?station_nm ?type ?long ?lat ?country_nm
