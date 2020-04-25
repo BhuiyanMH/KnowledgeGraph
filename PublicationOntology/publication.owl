@@ -1,0 +1,605 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.example.com/publication.owl#"
+     xml:base="http://www.example.com/publication.owl"
+     xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+    <owl:Ontology rdf:about="http://www.example.com/publication/"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2003/06/sw-vocab-status/ns#term_status -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#scopeNote -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#scopeNote"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.example.com/publication.owl#about -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.com/publication.owl#about">
+        <rdfs:domain rdf:resource="http://www.example.com/publication.owl#Review"/>
+        <rdfs:range rdf:resource="http://www.example.com/publication.owl#Paper"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.com/publication.owl#affiliatedTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.com/publication.owl#affiliatedTo">
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.com/publication.owl#citedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.com/publication.owl#citedBy">
+        <rdfs:domain rdf:resource="http://www.example.com/publication.owl#Paper"/>
+        <rdfs:range rdf:resource="http://www.example.com/publication.owl#Paper"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.com/publication.owl#give -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.com/publication.owl#give">
+        <rdfs:domain rdf:resource="http://www.example.com/publication.owl#Author"/>
+        <rdfs:range rdf:resource="http://www.example.com/publication.owl#Review"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.com/publication.owl#hasKeyword -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.com/publication.owl#hasKeyword">
+        <rdfs:domain rdf:resource="http://www.example.com/publication.owl#Paper"/>
+        <rdfs:range rdf:resource="http://www.example.com/publication.owl#Keyword"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.com/publication.owl#heldIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.com/publication.owl#heldIn">
+        <rdfs:domain rdf:resource="http://www.example.com/publication.owl#Conference"/>
+        <rdfs:range rdf:resource="http://www.example.com/publication.owl#City"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.com/publication.owl#locatedAt -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.com/publication.owl#locatedAt">
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <rdfs:range rdf:resource="http://www.example.com/publication.owl#City"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.com/publication.owl#publishedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.com/publication.owl#publishedIn">
+        <rdfs:domain rdf:resource="http://www.example.com/publication.owl#Paper"/>
+        <rdfs:range rdf:resource="http://www.example.com/publication.owl#Periodical"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.com/publication.owl#written -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.com/publication.owl#written">
+        <rdfs:domain rdf:resource="http://www.example.com/publication.owl#Author"/>
+        <rdfs:range rdf:resource="http://www.example.com/publication.owl#Paper"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.example.com/publication.owl#authorID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.com/publication.owl#authorID">
+        <rdfs:domain rdf:resource="http://www.example.com/publication.owl#Author"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.com/publication.owl#authorName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.com/publication.owl#authorName">
+        <rdfs:domain rdf:resource="http://www.example.com/publication.owl#Author"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.com/publication.owl#cityName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.com/publication.owl#cityName">
+        <rdfs:domain rdf:resource="http://www.example.com/publication.owl#City"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.com/publication.owl#comID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.com/publication.owl#comID">
+        <rdfs:domain rdf:resource="http://www.example.com/publication.owl#Company"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.com/publication.owl#comment -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.com/publication.owl#comment">
+        <rdfs:domain rdf:resource="http://www.example.com/publication.owl#Review"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.com/publication.owl#compName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.com/publication.owl#compName">
+        <rdfs:domain rdf:resource="http://www.example.com/publication.owl#Company"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.com/publication.owl#confID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.com/publication.owl#confID">
+        <rdfs:domain rdf:resource="http://www.example.com/publication.owl#Conference"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.com/publication.owl#confTitle -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.com/publication.owl#confTitle">
+        <rdfs:domain rdf:resource="http://www.example.com/publication.owl#Conference"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.com/publication.owl#decision -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.com/publication.owl#decision">
+        <rdfs:domain rdf:resource="http://www.example.com/publication.owl#Review"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.com/publication.owl#ee -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.com/publication.owl#ee">
+        <rdfs:domain rdf:resource="http://www.example.com/publication.owl#Paper"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.com/publication.owl#issn -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.com/publication.owl#issn">
+        <rdfs:domain rdf:resource="http://www.example.com/publication.owl#Journal"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.com/publication.owl#journalID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.com/publication.owl#journalID">
+        <rdfs:domain rdf:resource="http://www.example.com/publication.owl#Journal"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.com/publication.owl#journalTitle -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.com/publication.owl#journalTitle">
+        <rdfs:domain rdf:resource="http://www.example.com/publication.owl#Journal"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.com/publication.owl#keyID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.com/publication.owl#keyID">
+        <rdfs:domain rdf:resource="http://www.example.com/publication.owl#Keyword"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.com/publication.owl#keyName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.com/publication.owl#keyName">
+        <rdfs:domain rdf:resource="http://www.example.com/publication.owl#Keyword"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.com/publication.owl#page -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.com/publication.owl#page">
+        <rdfs:domain rdf:resource="http://www.example.com/publication.owl#Paper"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.com/publication.owl#paperID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.com/publication.owl#paperID">
+        <rdfs:domain rdf:resource="http://www.example.com/publication.owl#Paper"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.com/publication.owl#paperTitle -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.com/publication.owl#paperTitle">
+        <rdfs:domain rdf:resource="http://www.example.com/publication.owl#Paper"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.com/publication.owl#publisher -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.com/publication.owl#publisher">
+        <rdfs:domain rdf:resource="http://www.example.com/publication.owl#Journal"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.com/publication.owl#revID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.com/publication.owl#revID">
+        <rdfs:domain rdf:resource="http://www.example.com/publication.owl#Review"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.com/publication.owl#uniID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.com/publication.owl#uniID">
+        <rdfs:domain rdf:resource="http://www.example.com/publication.owl#University"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.com/publication.owl#uniName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.com/publication.owl#uniName">
+        <rdfs:domain rdf:resource="http://www.example.com/publication.owl#University"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.com/publication.owl#volume -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.com/publication.owl#volume">
+        <rdfs:domain rdf:resource="http://www.example.com/publication.owl#Paper"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.com/publication.owl#year -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.com/publication.owl#year">
+        <rdfs:domain rdf:resource="http://www.example.com/publication.owl#Paper"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.example.com/publication.owl#AIConference -->
+
+    <owl:Class rdf:about="http://www.example.com/publication.owl#AIConference">
+        <rdfs:subClassOf rdf:resource="http://www.example.com/publication.owl#Conference"/>
+        <owl:disjointWith rdf:resource="http://www.example.com/publication.owl#DBConference"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.com/publication.owl#Author -->
+
+    <owl:Class rdf:about="http://www.example.com/publication.owl#Author">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.com/publication.owl#City -->
+
+    <owl:Class rdf:about="http://www.example.com/publication.owl#City">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.com/publication.owl#ClosedAccessJournal -->
+
+    <owl:Class rdf:about="http://www.example.com/publication.owl#ClosedAccessJournal">
+        <rdfs:subClassOf rdf:resource="http://www.example.com/publication.owl#Journal"/>
+        <owl:disjointWith rdf:resource="http://www.example.com/publication.owl#OpenAccessJournal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.com/publication.owl#Company -->
+
+    <owl:Class rdf:about="http://www.example.com/publication.owl#Company">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <owl:disjointWith rdf:resource="http://www.example.com/publication.owl#University"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.com/publication.owl#Conference -->
+
+    <owl:Class rdf:about="http://www.example.com/publication.owl#Conference">
+        <rdfs:subClassOf rdf:resource="http://www.example.com/publication.owl#Periodical"/>
+        <owl:disjointWith rdf:resource="http://www.example.com/publication.owl#Journal"/>
+        <rdfs:comment xml:lang="en">A meeting for consultation or discussion.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Conference</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.com/publication.owl#DBConference -->
+
+    <owl:Class rdf:about="http://www.example.com/publication.owl#DBConference">
+        <rdfs:subClassOf rdf:resource="http://www.example.com/publication.owl#Conference"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.com/publication.owl#DemoPaper -->
+
+    <owl:Class rdf:about="http://www.example.com/publication.owl#DemoPaper">
+        <rdfs:subClassOf rdf:resource="http://www.example.com/publication.owl#Paper"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.com/publication.owl#FullPaper -->
+
+    <owl:Class rdf:about="http://www.example.com/publication.owl#FullPaper">
+        <rdfs:subClassOf rdf:resource="http://www.example.com/publication.owl#Paper"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.com/publication.owl#Journal -->
+
+    <owl:Class rdf:about="http://www.example.com/publication.owl#Journal">
+        <rdfs:subClassOf rdf:resource="http://www.example.com/publication.owl#Periodical"/>
+        <rdfs:comment xml:lang="en">A periodical of scholarly journal Articles.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Journal</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.com/publication.owl#Keyword -->
+
+    <owl:Class rdf:about="http://www.example.com/publication.owl#Keyword">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.com/publication.owl#OpenAccessJournal -->
+
+    <owl:Class rdf:about="http://www.example.com/publication.owl#OpenAccessJournal">
+        <rdfs:subClassOf rdf:resource="http://www.example.com/publication.owl#Journal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.com/publication.owl#Paper -->
+
+    <owl:Class rdf:about="http://www.example.com/publication.owl#Paper">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.com/publication.owl#Periodical -->
+
+    <owl:Class rdf:about="http://www.example.com/publication.owl#Periodical">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment xml:lang="en">A group of related documents issued at regular intervals.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Periodical</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.com/publication.owl#Review -->
+
+    <owl:Class rdf:about="http://www.example.com/publication.owl#Review">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.com/publication.owl#Reviewer -->
+
+    <owl:Class rdf:about="http://www.example.com/publication.owl#Reviewer">
+        <rdfs:subClassOf rdf:resource="http://www.example.com/publication.owl#Author"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.com/publication.owl#ShortPaper -->
+
+    <owl:Class rdf:about="http://www.example.com/publication.owl#ShortPaper">
+        <rdfs:subClassOf rdf:resource="http://www.example.com/publication.owl#Paper"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.com/publication.owl#SurveyPaper -->
+
+    <owl:Class rdf:about="http://www.example.com/publication.owl#SurveyPaper">
+        <rdfs:subClassOf rdf:resource="http://www.example.com/publication.owl#Paper"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.com/publication.owl#University -->
+
+    <owl:Class rdf:about="http://www.example.com/publication.owl#University">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Agent -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Agent">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <skos:scopeNote xml:lang="en">Used to describe any &quot;agent&quot; related to bibliographic items. Such agents can be persons, organizations or groups of any kind.</skos:scopeNote>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Document -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Document">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Organization -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Organization">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <owl:disjointWith rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <skos:scopeNote xml:lang="en">Ued to describe an organization related to bibliographic items such as a publishing company, etc.</skos:scopeNote>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Person -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <skos:scopeNote xml:lang="en">Used to describe a Person related to a bibliographic ite such as an author, an editor, etc.</skos:scopeNote>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.example.com/publication.owl#City"/>
+            <rdf:Description rdf:about="http://www.example.com/publication.owl#Keyword"/>
+            <rdf:Description rdf:about="http://www.example.com/publication.owl#Periodical"/>
+            <rdf:Description rdf:about="http://www.example.com/publication.owl#Review"/>
+            <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Agent"/>
+            <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Document"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.example.com/publication.owl#DemoPaper"/>
+            <rdf:Description rdf:about="http://www.example.com/publication.owl#FullPaper"/>
+            <rdf:Description rdf:about="http://www.example.com/publication.owl#ShortPaper"/>
+            <rdf:Description rdf:about="http://www.example.com/publication.owl#SurveyPaper"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
