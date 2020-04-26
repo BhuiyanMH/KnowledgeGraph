@@ -7,6 +7,7 @@
 *.iml
 out
 gen
+.idea/
 venv/
 test/
 data/
