@@ -1,0 +1,220 @@
+<http://www.example.com/publication.owl/Phil_Shaw> <http://www.example.com/publication.owl/authorID> "7433504"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/Phil_Shaw> <http://www.example.com/publication.owl/authorName> "Phil Shaw" .
+<http://www.example.com/publication.owl/Michael_L_Brodie> <http://www.example.com/publication.owl/authorID> "7433488"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/Michael_L_Brodie> <http://www.example.com/publication.owl/authorName> "Michael L. Brodie" .
+<http://www.example.com/publication.owl/Helmar_Gust> <http://www.example.com/publication.owl/authorID> "7433558"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/Helmar_Gust> <http://www.example.com/publication.owl/authorName> "Helmar Gust" .
+<http://www.example.com/publication.owl/Esther_Konig> <http://www.example.com/publication.owl/authorID> "7433549"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/Esther_Konig> <http://www.example.com/publication.owl/authorName> "Esther König" .
+<http://www.example.com/publication.owl/Mike_Kelley> <http://www.example.com/publication.owl/authorID> "7433503"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/Mike_Kelley> <http://www.example.com/publication.owl/authorName> "Mike Kelley" .
+<http://www.example.com/publication.owl/Ulrike_Weiland> <http://www.example.com/publication.owl/authorID> "7433554"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/Ulrike_Weiland> <http://www.example.com/publication.owl/authorName> "Ulrike Weiland" .
+<http://www.example.com/publication.owl/Mechthild_Rickheit> <http://www.example.com/publication.owl/authorID> "7433560"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/Mechthild_Rickheit> <http://www.example.com/publication.owl/authorName> "Mechthild Rickheit" .
+<http://www.example.com/publication.owl/Frank_Manola> <http://www.example.com/publication.owl/authorID> "7433487"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/Frank_Manola> <http://www.example.com/publication.owl/authorName> "Frank Manola" .
+<http://www.example.com/publication.owl/Krishna_G_Kulkarni> <http://www.example.com/publication.owl/authorID> "7433500"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/Krishna_G_Kulkarni> <http://www.example.com/publication.owl/authorName> "Krishna G. Kulkarni" .
+<http://www.example.com/publication.owl/Christopher_Habel> <http://www.example.com/publication.owl/authorID> "7433521"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/Christopher_Habel> <http://www.example.com/publication.owl/authorName> "Christopher Habel" .
+<http://www.example.com/publication.owl/Egon_Borger> <http://www.example.com/publication.owl/authorID> "7433526"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/Egon_Borger> <http://www.example.com/publication.owl/authorName> "Egon Börger" .
+<http://www.example.com/publication.owl/Peter_H_Schmitt> <http://www.example.com/publication.owl/authorID> "7433545"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/Peter_H_Schmitt> <http://www.example.com/publication.owl/authorName> "Peter H. Schmitt" .
+<http://www.example.com/publication.owl/Gerd_Kortum> <http://www.example.com/publication.owl/authorID> "7433570"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/Gerd_Kortum> <http://www.example.com/publication.owl/authorName> "Gerd Kortüm" .
+<http://www.example.com/publication.owl/Bernd_Walter> <http://www.example.com/publication.owl/authorID> "7433522"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/Bernd_Walter> <http://www.example.com/publication.owl/authorName> "Bernd Walter" .
+<http://www.example.com/publication.owl/Stefan_J_Schierholz> <http://www.example.com/publication.owl/authorID> "7433537"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/Stefan_J_Schierholz> <http://www.example.com/publication.owl/authorName> "Stefan J. Schierholz" .
+<http://www.example.com/publication.owl/Kai_Uwe_Carstensen> <http://www.example.com/publication.owl/authorID> "7433553"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/Kai_Uwe_Carstensen> <http://www.example.com/publication.owl/authorName> "Kai-Uwe Carstensen" .
+<http://www.example.com/publication.owl/Michael_Tarnowski> <http://www.example.com/publication.owl/authorID> "7433557"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/Michael_Tarnowski> <http://www.example.com/publication.owl/authorName> "Michael Tarnowski" .
+<http://www.example.com/publication.owl/Cetin_Ozbutun> <http://www.example.com/publication.owl/authorID> "7433499"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/Cetin_Ozbutun> <http://www.example.com/publication.owl/authorName> "Cetin Ozbutun" .
+<http://www.example.com/publication.owl/Esteban_Zimanyi> <http://www.example.com/publication.owl/authorID> "7433477"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/Esteban_Zimanyi> <http://www.example.com/publication.owl/authorName> "Esteban Zimanyi" .
+<http://www.example.com/publication.owl/Rolf_Sander> <http://www.example.com/publication.owl/authorID> "7433505"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/Rolf_Sander> <http://www.example.com/publication.owl/authorName> "Rolf Sander" .
+<http://www.example.com/publication.owl/Christos_Garidis> <http://www.example.com/publication.owl/authorID> "7433576"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/Christos_Garidis> <http://www.example.com/publication.owl/authorName> "Christos Garidis" .
+<http://www.example.com/publication.owl/Angelika_Storrer> <http://www.example.com/publication.owl/authorID> "7433548"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/Angelika_Storrer> <http://www.example.com/publication.owl/authorName> "Angelika Storrer" .
+<http://www.example.com/publication.owl/Birgit_Wendholt> <http://www.example.com/publication.owl/authorID> "7433538"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/Birgit_Wendholt> <http://www.example.com/publication.owl/authorName> "Birgit Wendholt" .
+<http://www.example.com/publication.owl/Lutz_Voelkel> <http://www.example.com/publication.owl/authorID> "7433552"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/Lutz_Voelkel> <http://www.example.com/publication.owl/authorName> "Lutz Voelkel" .
+<http://www.example.com/publication.owl/Rudi_Studer> <http://www.example.com/publication.owl/authorID> "7433530"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/Rudi_Studer> <http://www.example.com/publication.owl/authorName> "Rudi Studer" .
+<http://www.example.com/publication.owl/Michael_Schwarz_0001> <http://www.example.com/publication.owl/authorID> "7433485"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/Michael_Schwarz_0001> <http://www.example.com/publication.owl/authorName> "Michael Schwarz 0001" .
+<http://www.example.com/publication.owl/Manfred_Schmidt_Schauß> <http://www.example.com/publication.owl/authorID> "7433533"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/Manfred_Schmidt_Schauß> <http://www.example.com/publication.owl/authorName> "Manfred Schmidt-Schauß" .
+<http://www.example.com/publication.owl/Michel_E_Adiba> <http://www.example.com/publication.owl/authorID> "7433566"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/Michel_E_Adiba> <http://www.example.com/publication.owl/authorName> "Michel E. Adiba" .
+<http://www.example.com/publication.owl/Kai_von_Luck> <http://www.example.com/publication.owl/authorID> "7433561"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/Kai_von_Luck> <http://www.example.com/publication.owl/authorName> "Kai von Luck" .
+<http://www.example.com/publication.owl/Ipke_Wachsmuth> <http://www.example.com/publication.owl/authorID> "7433571"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/Ipke_Wachsmuth> <http://www.example.com/publication.owl/authorName> "Ipke Wachsmuth" .
+<http://www.example.com/publication.owl/Mohammed_Nadjib_Khenkhar> <http://www.example.com/publication.owl/authorID> "7433541"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/Mohammed_Nadjib_Khenkhar> <http://www.example.com/publication.owl/authorName> "Mohammed Nadjib Khenkhar" .
+<http://www.example.com/publication.owl/Eric_Mays> <http://www.example.com/publication.owl/authorID> "7433564"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/Eric_Mays> <http://www.example.com/publication.owl/authorName> "Eric Mays" .
+<http://www.example.com/publication.owl/Brigitte_Blaser> <http://www.example.com/publication.owl/authorID> "7433547"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/Brigitte_Blaser> <http://www.example.com/publication.owl/authorName> "Brigitte Bläser" .
+<http://www.example.com/publication.owl/Mark_F_Hornick> <http://www.example.com/publication.owl/authorID> "7433490"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/Mark_F_Hornick> <http://www.example.com/publication.owl/authorName> "Mark F. Hornick" .
+<http://www.example.com/publication.owl/Thomas_Ludwig_0001> <http://www.example.com/publication.owl/authorID> "7433506"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/Thomas_Ludwig_0001> <http://www.example.com/publication.owl/authorName> "Thomas Ludwig 0001" .
+<http://www.example.com/publication.owl/Hans_Joachim_Goltz> <http://www.example.com/publication.owl/authorID> "7433534"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/Hans_Joachim_Goltz> <http://www.example.com/publication.owl/authorName> "Hans-Joachim Goltz" .
+<http://www.example.com/publication.owl/Kurt_Eberle> <http://www.example.com/publication.owl/authorID> "7433574"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/Kurt_Eberle> <http://www.example.com/publication.owl/authorName> "Kurt Eberle" .
+<http://www.example.com/publication.owl/Edgar_Frank_Codd> <http://www.example.com/publication.owl/authorID> "7433544"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/Edgar_Frank_Codd> <http://www.example.com/publication.owl/authorName> "Edgar Frank Codd" .
+<http://www.example.com/publication.owl/Toni_Bollinger> <http://www.example.com/publication.owl/authorID> "7433531"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/Toni_Bollinger> <http://www.example.com/publication.owl/authorName> "Toni Bollinger" .
+<http://www.example.com/publication.owl/Udo_Pletat> <http://www.example.com/publication.owl/authorID> "7433510"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/Udo_Pletat> <http://www.example.com/publication.owl/authorName> "Udo Pletat" .
+<http://www.example.com/publication.owl/Alejandro_P_Buchmann> <http://www.example.com/publication.owl/authorID> "7433493"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/Alejandro_P_Buchmann> <http://www.example.com/publication.owl/authorName> "Alejandro P. Buchmann" .
+<http://www.example.com/publication.owl/Claudia_Mrotzek> <http://www.example.com/publication.owl/authorID> "7433550"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/Claudia_Mrotzek> <http://www.example.com/publication.owl/authorName> "Claudia Mrotzek" .
+<http://www.example.com/publication.owl/Bruce_G_Lindsay_0001> <http://www.example.com/publication.owl/authorID> "7433567"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/Bruce_G_Lindsay_0001> <http://www.example.com/publication.owl/authorName> "Bruce G. Lindsay 0001" .
+<http://www.example.com/publication.owl/Yuval_Yarom> <http://www.example.com/publication.owl/authorID> "7433486"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/Yuval_Yarom> <http://www.example.com/publication.owl/authorName> "Yuval Yarom" .
+<http://www.example.com/publication.owl/Werner_Haas> <http://www.example.com/publication.owl/authorID> "7433480"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/Werner_Haas> <http://www.example.com/publication.owl/authorName> "Werner Haas" .
+<http://www.example.com/publication.owl/Werner_Emde> <http://www.example.com/publication.owl/authorID> "7433507"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/Werner_Emde> <http://www.example.com/publication.owl/authorName> "Werner Emde" .
+<http://www.example.com/publication.owl/Brigitte_Bartsch_Sporl> <http://www.example.com/publication.owl/authorID> "7433515"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/Brigitte_Bartsch_Sporl> <http://www.example.com/publication.owl/authorName> "Brigitte Bartsch-Spörl" .
+<http://www.example.com/publication.owl/Hector_Garcia_Molina> <http://www.example.com/publication.owl/authorID> "7433573"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/Hector_Garcia_Molina> <http://www.example.com/publication.owl/authorName> "Héctor García-Molina" .
+<http://www.example.com/publication.owl/Jim_Melton> <http://www.example.com/publication.owl/authorID> "7433501"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/Jim_Melton> <http://www.example.com/publication.owl/authorName> "Jim Melton" .
+<http://www.example.com/publication.owl/Michael_Stonebraker> <http://www.example.com/publication.owl/authorID> "7433489"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/Michael_Stonebraker> <http://www.example.com/publication.owl/authorName> "Michael Stonebraker" .
+<http://www.example.com/publication.owl/Moritz_Lipp> <http://www.example.com/publication.owl/authorID> "7433482"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/Moritz_Lipp> <http://www.example.com/publication.owl/authorName> "Moritz Lipp" .
+<http://www.example.com/publication.owl/Michael_Czymmeck> <http://www.example.com/publication.owl/authorID> "7433556"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/Michael_Czymmeck> <http://www.example.com/publication.owl/authorName> "Michael Czymmeck" .
+<http://www.example.com/publication.owl/Roland_Seiffert> <http://www.example.com/publication.owl/authorID> "7433527"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/Roland_Seiffert> <http://www.example.com/publication.owl/authorName> "Roland Seiffert" .
+<http://www.example.com/publication.owl/Dimitrios_Georgakopoulos> <http://www.example.com/publication.owl/authorID> "7433495"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/Dimitrios_Georgakopoulos> <http://www.example.com/publication.owl/authorName> "Dimitrios Georgakopoulos" .
+<http://www.example.com/publication.owl/Hans_Uszkoreit> <http://www.example.com/publication.owl/authorID> "7433511"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/Hans_Uszkoreit> <http://www.example.com/publication.owl/authorName> "Hans Uszkoreit" .
+<http://www.example.com/publication.owl/Stefan_Mangard> <http://www.example.com/publication.owl/authorID> "7433483"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/Stefan_Mangard> <http://www.example.com/publication.owl/authorName> "Stefan Mangard" .
+<http://www.example.com/publication.owl/Carola_Eschenbach> <http://www.example.com/publication.owl/authorID> "7433532"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/Carola_Eschenbach> <http://www.example.com/publication.owl/authorName> "Carola Eschenbach" .
+<http://www.example.com/publication.owl/Burkhard_Kehrbusch> <http://www.example.com/publication.owl/authorID> "7433517"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/Burkhard_Kehrbusch> <http://www.example.com/publication.owl/authorName> "Burkhard Kehrbusch" .
+<http://www.example.com/publication.owl/Martin_Hubner> <http://www.example.com/publication.owl/authorID> "7433555"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/Martin_Hubner> <http://www.example.com/publication.owl/authorName> "Martin Hübner" .
+<http://www.example.com/publication.owl/Stefan_Bottcher> <http://www.example.com/publication.owl/authorID> "7433529"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/Stefan_Bottcher> <http://www.example.com/publication.owl/authorName> "Stefan Böttcher" .
+<http://www.example.com/publication.owl/Gudrun_Klose> <http://www.example.com/publication.owl/authorID> "7433539"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/Gudrun_Klose> <http://www.example.com/publication.owl/authorName> "Gudrun Klose" .
+<http://www.example.com/publication.owl/M_Tamer_Ozsu> <http://www.example.com/publication.owl/authorID> "7433494"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/M_Tamer_Ozsu> <http://www.example.com/publication.owl/authorName> "M. Tamer Özsu" .
+<http://www.example.com/publication.owl/Thomas_Prescher_0002> <http://www.example.com/publication.owl/authorID> "7433484"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/Thomas_Prescher_0002> <http://www.example.com/publication.owl/authorName> "Thomas Prescher 0002" .
+<http://www.example.com/publication.owl/Mike_Hamburg> <http://www.example.com/publication.owl/authorID> "7433481"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/Mike_Hamburg> <http://www.example.com/publication.owl/authorName> "Mike Hamburg" .
+<http://www.example.com/publication.owl/Daniel_Gruss> <http://www.example.com/publication.owl/authorID> "7433479"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/Daniel_Gruss> <http://www.example.com/publication.owl/authorName> "Daniel Gruss" .
+<http://www.example.com/publication.owl/Stefan_Benzschawel> <http://www.example.com/publication.owl/authorID> "7433525"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/Stefan_Benzschawel> <http://www.example.com/publication.owl/authorName> "Stefan Benzschawel" .
+<http://www.example.com/publication.owl/Otthein_Herzog> <http://www.example.com/publication.owl/authorID> "7433535"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/Otthein_Herzog> <http://www.example.com/publication.owl/authorName> "Otthein Herzog" .
+<http://www.example.com/publication.owl/Claudia_Maienborn> <http://www.example.com/publication.owl/authorID> "7433546"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/Claudia_Maienborn> <http://www.example.com/publication.owl/authorName> "Claudia Maienborn" .
+<http://www.example.com/publication.owl/Thomas_Pirlein> <http://www.example.com/publication.owl/authorID> "7433569"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/Thomas_Pirlein> <http://www.example.com/publication.owl/authorName> "Thomas Pirlein" .
+<http://www.example.com/publication.owl/Elisabeth_Neugebauer> <http://www.example.com/publication.owl/authorID> "7433562"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/Elisabeth_Neugebauer> <http://www.example.com/publication.owl/authorName> "Elisabeth Neugebauer" .
+<http://www.example.com/publication.owl/Michael_Ley> <http://www.example.com/publication.owl/authorID> "7433523"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/Michael_Ley> <http://www.example.com/publication.owl/authorName> "Michael Ley" .
+<http://www.example.com/publication.owl/Ingrid_Renz> <http://www.example.com/publication.owl/authorID> "7433572"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/Ingrid_Renz> <http://www.example.com/publication.owl/authorName> "Ingrid Renz" .
+<http://www.example.com/publication.owl/Christoph_Beierle> <http://www.example.com/publication.owl/authorID> "7433509"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/Christoph_Beierle> <http://www.example.com/publication.owl/authorName> "Christoph Beierle" .
+<http://www.example.com/publication.owl/Markus_Hohfeld> <http://www.example.com/publication.owl/authorID> "7433518"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/Markus_Hohfeld> <http://www.example.com/publication.owl/authorName> "Markus Höhfeld" .
+<http://www.example.com/publication.owl/Daniel_Genkin> <http://www.example.com/publication.owl/authorID> "7433478"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/Daniel_Genkin> <http://www.example.com/publication.owl/authorName> "Daniel Genkin" .
+<http://www.example.com/publication.owl/Birgit_Wesche> <http://www.example.com/publication.owl/authorID> "7433520"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/Birgit_Wesche> <http://www.example.com/publication.owl/authorName> "Birgit Wesche" .
+<http://www.example.com/publication.owl/Michael_Herweg> <http://www.example.com/publication.owl/authorID> "7433540"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/Michael_Herweg> <http://www.example.com/publication.owl/authorName> "Michael Herweg" .
+<http://www.example.com/publication.owl/Gert_Smolka> <http://www.example.com/publication.owl/authorID> "7433519"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/Gert_Smolka> <http://www.example.com/publication.owl/authorName> "Gert Smolka" .
+<http://www.example.com/publication.owl/Joe_D_Morrison> <http://www.example.com/publication.owl/authorID> "7433491"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/Joe_D_Morrison> <http://www.example.com/publication.owl/authorName> "Joe D. Morrison" .
+<http://www.example.com/publication.owl/Albert_Maier> <http://www.example.com/publication.owl/authorID> "7433524"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/Albert_Maier> <http://www.example.com/publication.owl/authorName> "Albert Maier" .
+<http://www.example.com/publication.owl/Ewald_Lang> <http://www.example.com/publication.owl/authorID> "7433568"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/Ewald_Lang> <http://www.example.com/publication.owl/authorName> "Ewald Lang" .
+<http://www.example.com/publication.owl/Erich_Gehlen> <http://www.example.com/publication.owl/authorID> "7433516"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/Erich_Gehlen> <http://www.example.com/publication.owl/authorName> "Erich Gehlen" .
+<http://www.example.com/publication.owl/Petra_Ludewig> <http://www.example.com/publication.owl/authorID> "7433559"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/Petra_Ludewig> <http://www.example.com/publication.owl/authorName> "Petra Ludewig" .
+<http://www.example.com/publication.owl/Benjamin_Hurwitz> <http://www.example.com/publication.owl/authorID> "7433497"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/Benjamin_Hurwitz> <http://www.example.com/publication.owl/authorName> "Benjamin Hurwitz" .
+<http://www.example.com/publication.owl/Ulrike_Rackow> <http://www.example.com/publication.owl/authorID> "7433512"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/Ulrike_Rackow> <http://www.example.com/publication.owl/authorName> "Ulrike Rackow" .
+<http://www.example.com/publication.owl/David_Beech> <http://www.example.com/publication.owl/authorID> "7433498"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/David_Beech> <http://www.example.com/publication.owl/authorName> "David Beech" .
+<http://www.example.com/publication.owl/Claus_Rainer_Rollinger> <http://www.example.com/publication.owl/authorID> "7433508"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/Claus_Rainer_Rollinger> <http://www.example.com/publication.owl/authorName> "Claus-Rainer Rollinger" .
+<http://www.example.com/publication.owl/Simone_Pribbenow> <http://www.example.com/publication.owl/authorID> "7433542"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/Simone_Pribbenow> <http://www.example.com/publication.owl/authorName> "Simone Pribbenow" .
+<http://www.example.com/publication.owl/Farshad_Nayeri> <http://www.example.com/publication.owl/authorID> "7433492"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/Farshad_Nayeri> <http://www.example.com/publication.owl/authorName> "Farshad Nayeri" .
+<http://www.example.com/publication.owl/Sitaram_Lanka> <http://www.example.com/publication.owl/authorID> "7433563"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/Sitaram_Lanka> <http://www.example.com/publication.owl/authorName> "Sitaram Lanka" .
+<http://www.example.com/publication.owl/Petra_Maier> <http://www.example.com/publication.owl/authorID> "7433565"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/Petra_Maier> <http://www.example.com/publication.owl/authorName> "Petra Maier" .
+<http://www.example.com/publication.owl/Stefan_Borner> <http://www.example.com/publication.owl/authorID> "7433551"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/Stefan_Borner> <http://www.example.com/publication.owl/authorName> "Stefan Börner" .
+<http://www.example.com/publication.owl/Gisela_Schopke> <http://www.example.com/publication.owl/authorID> "7433528"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/Gisela_Schopke> <http://www.example.com/publication.owl/authorName> "Gisela Schöpke" .
+<http://www.example.com/publication.owl/Donald_Chamberlin> <http://www.example.com/publication.owl/authorID> "7433536"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/Donald_Chamberlin> <http://www.example.com/publication.owl/authorName> "Donald Chamberlin" .
+<http://www.example.com/publication.owl/Ido_Dagan> <http://www.example.com/publication.owl/authorID> "7433513"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/Ido_Dagan> <http://www.example.com/publication.owl/authorName> "Ido Dagan" .
+<http://www.example.com/publication.owl/Klaus_Rehkamper> <http://www.example.com/publication.owl/authorID> "7433543"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/Klaus_Rehkamper> <http://www.example.com/publication.owl/authorName> "Klaus Rehkämper" .
+<http://www.example.com/publication.owl/Gregor_Erbach> <http://www.example.com/publication.owl/authorID> "7433575"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/Gregor_Erbach> <http://www.example.com/publication.owl/authorName> "Gregor Erbach" .
+<http://www.example.com/publication.owl/Ulrike_Schwall> <http://www.example.com/publication.owl/authorID> "7433514"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/Ulrike_Schwall> <http://www.example.com/publication.owl/authorName> "Ulrike Schwall" .
+<http://www.example.com/publication.owl/Jonathan_Bauer> <http://www.example.com/publication.owl/authorID> "7433502"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/Jonathan_Bauer> <http://www.example.com/publication.owl/authorName> "Jonathan Bauer" .
+<http://www.example.com/publication.owl/Sandra_Heiler> <http://www.example.com/publication.owl/authorID> "7433496"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/Sandra_Heiler> <http://www.example.com/publication.owl/authorName> "Sandra Heiler" .
+<http://www.example.com/publication.owl/data_modeling> <http://www.example.com/publication.owl/keyID> "2"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/data_modeling> <http://www.example.com/publication.owl/keyName> "data modeling" .
+<http://www.example.com/publication.owl/data_querying> <http://www.example.com/publication.owl/keyID> "6"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/data_querying> <http://www.example.com/publication.owl/keyName> "data querying" .
+<http://www.example.com/publication.owl/data_management> <http://www.example.com/publication.owl/keyID> "0"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/data_management> <http://www.example.com/publication.owl/keyName> "data management" .
+<http://www.example.com/publication.owl/computer_vision> <http://www.example.com/publication.owl/keyID> "7"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/computer_vision> <http://www.example.com/publication.owl/keyName> "computer vision" .
+<http://www.example.com/publication.owl/data_storage> <http://www.example.com/publication.owl/keyID> "5"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/data_storage> <http://www.example.com/publication.owl/keyName> "data storage" .
+<http://www.example.com/publication.owl/big_data> <http://www.example.com/publication.owl/keyID> "3"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/big_data> <http://www.example.com/publication.owl/keyName> "big data" .
+<http://www.example.com/publication.owl/artificial_intelligence> <http://www.example.com/publication.owl/keyID> "9"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/artificial_intelligence> <http://www.example.com/publication.owl/keyName> "artificial intelligence" .
+<http://www.example.com/publication.owl/indexing> <http://www.example.com/publication.owl/keyID> "1"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/indexing> <http://www.example.com/publication.owl/keyName> "indexing" .
+<http://www.example.com/publication.owl/machine_learning> <http://www.example.com/publication.owl/keyID> "8"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/machine_learning> <http://www.example.com/publication.owl/keyName> "machine learning" .
+<http://www.example.com/publication.owl/data_processing> <http://www.example.com/publication.owl/keyID> "4"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl/data_processing> <http://www.example.com/publication.owl/keyName> "data processing" .
