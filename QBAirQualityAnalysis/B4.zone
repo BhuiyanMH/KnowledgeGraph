@@ -1,0 +1,16 @@
+PREFIX schema: <http://qweb.cs.aau.dk/airbase/schema/>
+PREFIX property: <http://qweb.cs.aau.dk/airbase/property/> 
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+SELECT ?city ?ocl ?yr (avg(?o3) as ?avg_ozo) 
+WHERE {
+    ?obs schema:O3 ?o3 .
+     ?obs schema:station ?station .
+     ?station property:ozoneClassification ?ocl.
+     ?station property:station ?station_nm.
+     ?obs schema:year ?year .
+     ?year property:yearNum ?yr .
+	 ?station schema:inCity ?city .
+	 ?obs  schema:sensor ?sensor .
+     ?sensor property:statisticShortName "Mean"^^xsd:string . 
+}
+GROUP BY ?city ?ocl ?yr
