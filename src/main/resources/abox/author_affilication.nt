@@ -1,0 +1,5 @@
+<http://www.example.com/publication.owl#Daniel_Gruss> <http://www.example.com/publication.owl#affiliatedTo> <http://www.example.com/publication.owl#UB> .
+<http://www.example.com/publication.owl#Mark_F_Hornick> <http://www.example.com/publication.owl#affiliatedTo> <http://www.example.com/publication.owl#Facebook> .
+<http://www.example.com/publication.owl#Daniel_Genkin> <http://www.example.com/publication.owl#affiliatedTo> <http://www.example.com/publication.owl#UPC> .
+<http://www.example.com/publication.owl#Michael_L_Brodie> <http://www.example.com/publication.owl#affiliatedTo> <http://www.example.com/publication.owl#Microsoft> .
+<http://www.example.com/publication.owl#Michael_Schwarz_0001> <http://www.example.com/publication.owl#affiliatedTo> <http://www.example.com/publication.owl#Google> .

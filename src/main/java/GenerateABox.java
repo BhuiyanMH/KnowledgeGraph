@@ -10,9 +10,7 @@ import java.util.HashMap;
 public class GenerateABox {
 
     //define the file paths
-    //static final String ARTICLE= "src/main/resources/article.csv";
     static final String ARTICLE_KEYWORD= "src/main/resources/article_keyword.csv";
-    static final String AUTHOR_ORG= "src/main/resources/auth_org.csv";
     static final String AUTHOR_ARTICLE= "src/main/resources/author_article.csv";
     static final String AUTHOR= "src/main/resources/authors.csv";
     static final String CITATION= "src/main/resources/citation.csv";
@@ -23,13 +21,10 @@ public class GenerateABox {
     static final String KEYWORD= "src/main/resources/keywords.csv";
     static final String ORGANIZATION= "src/main/resources/organization.csv";
     static final String REVIEW= "src/main/resources/review.csv";
+    static final String AUTHOR_ORG= "src/main/resources/auth_org.csv";
     static final String ABOX_PATH = "src/main/resources/abox/";
+    public static final String BASE_URL = "http://www.example.com/publication.owl#";
 
-    //public static final String BASE_URL = "http://www.semanticweb.org/";
-    public static final String BASE_URL = "http://www.example.com/publication.owl/";
-
-//    public static final String PROPERTY_URL = BASE_URL+"property/";
-//    public static final String RESOURCE_URL = BASE_URL+"resource/";
 
     public static void main(String args[]) {
 
@@ -43,11 +38,138 @@ public class GenerateABox {
         aboxModel = ModelFactory.createUnion(aboxModel, generateArticleKeywordTriples());
         aboxModel = ModelFactory.createUnion(aboxModel, generateAuthorArticleTriples());
         aboxModel = ModelFactory.createUnion(aboxModel, generateCitationTriples());
+        aboxModel = ModelFactory.createUnion(aboxModel, generateReviewTriples());
+        aboxModel = ModelFactory.createUnion(aboxModel, generateOrganizationTriples());
+        aboxModel = ModelFactory.createUnion(aboxModel, generateAuthorsAffilicationTriples());
 
-        writeTriples(aboxModel, ABOX_PATH+"abox.nt");
+        writeTriples(aboxModel, ABOX_PATH+"complete_abox.nt");
 
     }
 
+    static Model generateAuthorsAffilicationTriples() {
+
+        ArrayList<String> rows = readCSV(AUTHOR_ORG);
+        rows.remove(0); //Remove the header
+
+        HashMap authorNameMap = getColumnValues(0, 1, AUTHOR);
+        HashMap organizationNameMap = getColumnValues(0, 1, ORGANIZATION);
+
+        Model model = ModelFactory.createDefaultModel();
+
+        for (String row:rows) {
+
+            //System.out.println(row);
+            String[] columns = row.split(";");
+
+            String authorID = columns[0].trim();
+            String organizationID = columns[1].trim();
+
+            String authorName = (String) authorNameMap.get(authorID);
+            String organizationName = (String) organizationNameMap.get(organizationID);
+
+            String authorURL = BASE_URL + cleanString(authorName);
+            String organizationURL = BASE_URL+cleanString(organizationName);
+
+            Resource organization = model.createResource(organizationURL);
+            Resource author = model.createResource(authorURL)
+                    .addProperty(model.createProperty(BASE_URL+"affiliatedTo"), organization);
+        }
+        writeTriples(model, ABOX_PATH+"author_affilication.nt");
+        return model;
+    }
+    static Model generateOrganizationTriples() {
+
+        ArrayList<String> rows = readCSV(ORGANIZATION);
+        rows.remove(0); //Remove the header
+
+//        id;name;type;city
+//        0;UB;university;Barcelona
+
+        Model model = ModelFactory.createDefaultModel();
+
+        for (String row:rows) {
+
+            //System.out.println(row);
+            String[] columns = row.split(";");
+
+            String orgID = columns[0].trim();
+            String orgName = columns[1].trim();
+            String orgType = columns[2].trim();
+            String cityName = columns[3].trim();
+
+            String orgURI = BASE_URL+cleanString(orgName);
+            String cityURI = BASE_URL+cleanString(cityName);
+
+            Resource city = model.createResource(cityURI);
+            Resource organization = model.createResource(orgURI)
+                    .addProperty(model.createProperty(BASE_URL+"locatedAt"), city);
+
+            if(orgType.equals("university")){
+
+                organization.addProperty(model.createProperty(BASE_URL+"uniName"), orgName);
+                model.addLiteral(organization, model.createProperty(BASE_URL+"uniID"), Integer.parseInt(orgID));
+
+            }else{
+
+                organization.addProperty(model.createProperty(BASE_URL+"compName"), orgName);
+                model.addLiteral(organization, model.createProperty(BASE_URL+"comID"), Integer.parseInt(orgID));
+            }
+
+        }
+        writeTriples(model, ABOX_PATH+"organization.nt");
+        return model;
+    }
+    static Model generateReviewTriples() {
+
+        ArrayList<String> rows = readCSV(REVIEW);
+        rows.remove(0); //Remove the header
+
+//        id;reviewer_id;art_id;book_title;comment;decision
+//        0;7433572;1;VLDB;xyzaskhksdh asdfkjhkdsahkhsdka hksadkhkj s;yes
+
+        HashMap articleNameMap = getAllArticleNames();
+        HashMap authorsNameMap  = getColumnValues(0, 1, AUTHOR);
+
+        Model model = ModelFactory.createDefaultModel();
+
+        for (String row:rows) {
+
+            //System.out.println(row);
+            String[] columns = row.split(";");
+
+            String reviewID = columns[0].trim();
+            String reviewerID = columns[1].trim();
+            String paperID = columns[2].trim();
+            String comment = columns[4].trim();
+            String decision = columns[5].trim();
+
+            Boolean pubDecision = true;
+            if(decision.equals("yes"))
+                pubDecision = true;
+            else
+                pubDecision = false;
+
+
+            String reviewURI = BASE_URL+cleanString(reviewID);
+            String paperName = (String) articleNameMap.get(paperID);
+            String reviewerName = (String) authorsNameMap.get(reviewerID);
+
+            Resource review = model.createResource(reviewURI)
+                    .addProperty(model.createProperty(BASE_URL+"comment"), comment)
+                    .addProperty(model.createProperty(BASE_URL+"about"), model.createResource(BASE_URL+cleanString(paperName)));
+
+            model.addLiteral(review, model.createProperty(BASE_URL+"revID"), Integer.parseInt(reviewID));
+            model.addLiteral(review, model.createProperty(BASE_URL+"decision"), pubDecision);
+
+
+            Resource author = model.createResource(BASE_URL+cleanString(reviewerName))
+                    .addProperty(model.createProperty(BASE_URL+"give"), review);
+
+
+        }
+        writeTriples(model, ABOX_PATH+"review.nt");
+        return model;
+    }
     static Model generateCitationTriples() {
 
         ArrayList<String> rows = readCSV(CITATION);
@@ -78,7 +200,6 @@ public class GenerateABox {
         writeTriples(model, ABOX_PATH+"citation.nt");
         return model;
     }
-
     static Model generateAuthorArticleTriples() {
 
         ArrayList<String> rows = readCSV(AUTHOR_ARTICLE);
@@ -355,7 +476,6 @@ public class GenerateABox {
 
         return model;
     }
-
     static void printHashMap(HashMap map){
 
         for (Object name: map.keySet()){

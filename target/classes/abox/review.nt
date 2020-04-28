@@ -1,0 +1,25 @@
+<http://www.example.com/publication.owl#3> <http://www.example.com/publication.owl#decision> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.example.com/publication.owl#3> <http://www.example.com/publication.owl#revID> "3"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl#3> <http://www.example.com/publication.owl#about> <http://www.example.com/publication.owl#Wavelet_coding_of_polygonal_mesh_data_based_on_triangular_lattice_structure_with_expanded_nodes> .
+<http://www.example.com/publication.owl#3> <http://www.example.com/publication.owl#comment> "dsafbasdm  afjashkjhkjhsdjfh akj kahsdfhkashdk" .
+<http://www.example.com/publication.owl#Ingrid_Renz> <http://www.example.com/publication.owl#give> <http://www.example.com/publication.owl#0> .
+<http://www.example.com/publication.owl#1> <http://www.example.com/publication.owl#decision> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.example.com/publication.owl#1> <http://www.example.com/publication.owl#revID> "1"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl#1> <http://www.example.com/publication.owl#about> <http://www.example.com/publication.owl#A_novel_approach_to_low_frequency_activity_detection_in_highly_sampled_hydrophone_data_based_on_Bspline_approximation> .
+<http://www.example.com/publication.owl#1> <http://www.example.com/publication.owl#comment> "sdafbsadfb asjdfjaskjdf kh asdkjfhaksjfh kkjhaskj" .
+<http://www.example.com/publication.owl#4> <http://www.example.com/publication.owl#decision> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.example.com/publication.owl#4> <http://www.example.com/publication.owl#revID> "4"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl#4> <http://www.example.com/publication.owl#about> <http://www.example.com/publication.owl#An_efficient_coding_for_3d_geometry_data_based_on_surface_simplification_and_wavelet_transform> .
+<http://www.example.com/publication.owl#4> <http://www.example.com/publication.owl#comment> "sadfbasdf mkasjkdfkjha hkaj fahsdkjkjahsfhhk" .
+<http://www.example.com/publication.owl#Hector_GarciaMolina> <http://www.example.com/publication.owl#give> <http://www.example.com/publication.owl#1> .
+<http://www.example.com/publication.owl#Gregor_Erbach> <http://www.example.com/publication.owl#give> <http://www.example.com/publication.owl#3> .
+<http://www.example.com/publication.owl#Kurt_Eberle> <http://www.example.com/publication.owl#give> <http://www.example.com/publication.owl#2> .
+<http://www.example.com/publication.owl#2> <http://www.example.com/publication.owl#decision> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.example.com/publication.owl#2> <http://www.example.com/publication.owl#revID> "2"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl#2> <http://www.example.com/publication.owl#about> <http://www.example.com/publication.owl#The_study_of_watermarking_algorithm_for_vector_geospatial_data_based_on_the_phase_of_DFT> .
+<http://www.example.com/publication.owl#2> <http://www.example.com/publication.owl#comment> "sadfbasmfbmmsadfa  asdfjhasd f askdjfhksafhkash" .
+<http://www.example.com/publication.owl#Thomas_Pirlein> <http://www.example.com/publication.owl#give> <http://www.example.com/publication.owl#4> .
+<http://www.example.com/publication.owl#0> <http://www.example.com/publication.owl#decision> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.example.com/publication.owl#0> <http://www.example.com/publication.owl#revID> "0"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/publication.owl#0> <http://www.example.com/publication.owl#about> <http://www.example.com/publication.owl#Classification_of_outdoor_3D_lidar_data_based_on_unsupervised_Gaussian_mixture_models> .
+<http://www.example.com/publication.owl#0> <http://www.example.com/publication.owl#comment> "xyzaskhksdh asdfkjhkdsahkhsdka hksadkhkj s" .
