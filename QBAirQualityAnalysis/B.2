@@ -12,7 +12,7 @@ WHERE {
      ?city schema:locatedIn ?country . 
      ?country property:country ?country_nm .
 	 ?obs  schema:sensor ?sensor .
-     ?sensor property:statisticShortName "Mean"^^xsd:string . 
 }
 GROUP BY ?station ?country_nm ?yr
 ORDER BY DESC(?avg_benzo)
+LIMIT 10
