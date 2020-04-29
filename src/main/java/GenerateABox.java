@@ -82,9 +82,6 @@ public class GenerateABox {
         ArrayList<String> rows = readCSV(ORGANIZATION);
         rows.remove(0); //Remove the header
 
-//        id;name;type;city
-//        0;UB;university;Barcelona
-
         Model model = ModelFactory.createDefaultModel();
 
         for (String row:rows) {
@@ -123,9 +120,6 @@ public class GenerateABox {
 
         ArrayList<String> rows = readCSV(REVIEW);
         rows.remove(0); //Remove the header
-
-//        id;reviewer_id;art_id;book_title;comment;decision
-//        0;7433572;1;VLDB;xyzaskhksdh asdfkjhkdsahkhsdka hksadkhkj s;yes
 
         HashMap articleNameMap = getAllArticleNames();
         HashMap authorsNameMap  = getColumnValues(0, 1, AUTHOR);
@@ -264,11 +258,6 @@ public class GenerateABox {
     static Model generateConferenceArticleTriples() {
 
         ArrayList<String> rows = readCSV(CONFERENCE_ARTICLE);
-        //System.out.println(rows.get(0));
-        //id;title;conference;edition;ee;pages
-        //System.out.println(rows.get(1));
-        //0;MBase: Representing mathematical knowledge in a relational data base.;0;1;https://doi.org/10.1016/S1571-0661(05)80615-2|https://www.wikidata.org/entity/Q57389432;451-468
-
 
         rows.remove(0); //Remove the header
         HashMap conferenceNameMap = getColumnValues(0, 1, CONFERENCE);
@@ -312,9 +301,6 @@ public class GenerateABox {
     static Model generateConference() {
 
         ArrayList<String> rows = readCSV(CONFERENCE);
-        //System.out.println(rows.get(0));
-        //id;name;edition;city;year
-        //0;VLDB;1;Berlin;2016
 
         rows.remove(0); //Remove the header
 
@@ -352,10 +338,6 @@ public class GenerateABox {
     static Model generateJournalArticleTriples() {
 
         ArrayList<String> rows = readCSV(JOURNAL_ARTICLE);
-//        System.out.println(rows.get(0));
-//        //id;title;Journal;ee;year;volume;pages
-//        System.out.println(rows.get(1));
-//        //200;A data base system for river basin management.;0;http://dl.acm.org/citation.cfm?id=811243;2016;1;331-340
 
         rows.remove(0); //Remove the header
         HashMap journalNameMap = getColumnValues(0, 1, JOURNAL);
@@ -401,8 +383,7 @@ public class GenerateABox {
     static Model generateJournalTriples() {
 
         ArrayList<String> rows = readCSV(JOURNAL);
-        //System.out.println(rows.get(0));
-        //id;name;issn;publisher
+
         rows.remove(0); //Remove the header
         Model model = ModelFactory.createDefaultModel();
 
