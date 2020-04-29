@@ -383,14 +383,12 @@ public class GenerateABox {
     static Model generateJournalTriples() {
 
         ArrayList<String> rows = readCSV(JOURNAL);
-
         rows.remove(0); //Remove the header
         Model model = ModelFactory.createDefaultModel();
 
         for (String row:rows) {
-            //System.out.println(row);
-            String[] columns = row.split(";");
 
+            String[] columns = row.split(";");
             int id = Integer.parseInt(columns[0].trim());
             String name = columns[1].trim();
             String issn = columns[2].trim();
@@ -402,12 +400,9 @@ public class GenerateABox {
                     .addProperty(model.createProperty(BASE_URL+"journalTitle"),name)
                     .addProperty(model.createProperty(BASE_URL+"issn"),issn)
                     .addProperty(model.createProperty(BASE_URL+"publisher"),publisher);
-
             model.addLiteral(keyword, model.createProperty(BASE_URL+"journalID"), id);
-
         }
         writeTriples(model, ABOX_PATH+"journal.nt");
-
         return model;
     }
     static Model generateKeywordTriples() {
