@@ -1,0 +1,20 @@
+PREFIX schema: <http://qweb.cs.aau.dk/airbase/schema/>
+PREFIX property: <http://qweb.cs.aau.dk/airbase/property/> 
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+SELECT ?city ?type ?yr (avg(?no2) as ?avg_NO2) (avg(?so2) as ?avg_SO2) (avg(?pb) as ?avg_PB) (avg(?pm10) as ?avg_PM10) 
+WHERE {
+    ?obs schema:NO2 ?no2 .
+    ?obs schema:SO2 ?so2 .
+    ?obs schema:PB ?pb .
+    ?obs schema:PM10 ?pm10 .
+    ?obs schema:station ?station .
+    ?station property:station ?station_nm.
+    ?obs schema:year ?year .
+    ?year property:yearNum ?yr .
+    ?station schema:inCity ?city .
+    ?station property:type ?type.
+    ?obs  schema:sensor ?sensor .
+    ?sensor property:statisticShortName "Mean"^^xsd:string . 
+}
+GROUP BY ?city ?type ?yr
+ORDER BY DESC(?avg_NO2)
